@@ -22,7 +22,10 @@ if(!is_numeric($b)){
 
 echo "Введите operator '+' или '-' или '/' или '*' или '%':\n";
 fscanf(STDIN, "%s\n", $operator);
-echo $operator;
+if(($operator != '+') && ($operator != '-') && ($operator != '*') && ($operator != '/') && ($operator != '%')){
+    echo 'die';
+    return;
+}
 
 switch ($operator){
     case '+':
