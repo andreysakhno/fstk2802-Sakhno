@@ -8,8 +8,18 @@
 
 echo "Введите a:\n";
 fscanf(STDIN, "%s\n", $a);
+if(!is_numeric($a)){
+    echo 'die';
+    return;
+}
+
 echo "Введите b:\n";
 fscanf(STDIN, "%s\n", $b);
+if(!is_numeric($b)){
+    echo 'die';
+    return;
+}
+
 echo "Введите operator '+' или '-' или '/' или '*' или '%':\n";
 fscanf(STDIN, "%s\n", $operator);
 echo $operator;
