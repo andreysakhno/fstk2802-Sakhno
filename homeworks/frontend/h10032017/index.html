@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <ul>
+        <ul class="main-menu">
             <li class="active">
                 <a href="#" title="Пункт меню 1">Пункт меню 1</a>
             </li>
@@ -26,9 +26,11 @@
                 <a href="#" title="Пункт меню 5">Пункт меню 5</a>
             </li>
         </ul>
-        <label for="search-field">Поиск</label>
-        <input type="search" name="search" id="search-field">
-        <button type="button">Найти</button>
+        <form action="index.php" method="post">
+            <label for="search-field">Поиск</label>
+            <input type="search" name="search" id="search-field">
+            <input type="submit" value="Найти">
+        </form>
     </header>
     <main>
         <h3>Обо мне</h3>
